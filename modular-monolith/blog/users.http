@@ -1,0 +1,14 @@
+### Create a user (needs the REST Client extension: click "Send Request")
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+  "name": "Vaishnavi",
+  "email": "vaishnavi@example.com"
+}
+
+### Get user 1
+GET http://localhost:8080/api/users/1
+
+### Get a user that does not exist (expect 404)
+GET http://localhost:8080/api/users/999
